@@ -1,5 +1,5 @@
         <div class="row post">
-            <div class="izquierda col-xs-2 col-md-2 col-lg-2">
+            <aside class="izquierda col-xs-2 col-md-2 col-lg-2">
             {% if first_article_of_day %}
              <div class="date">
                 {% if article.date.strftime('%y') < CURRDATE.strftime('%y') %}
@@ -11,7 +11,7 @@
                 {% endif %}
              </div>
             {% endif %}
-          
+
             {% if article.tags %}
                  <div class="tags"><ul>{% for t in article.tags %}
                      <li>
@@ -20,17 +20,21 @@
                      {%- endfor %}</ul>
                  </div>
             {%- endif %}
-            </div>
-            <div class="derecha{% if article.pinned %} pinned{% endif %} col-xs-10 col-md-10 col-lg-10">
+            </aside>
+            <article class="derecha{% if article.pinned %} pinned{% endif %} col-xs-10 col-md-10 col-lg-10">
                 {% if article['title'] -%}
-                <h1 class="title">
-                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Read full article: &quot;{{ article.title|striptags }}&quot;">{{ article.title|striptags }}</a>
-                </h1>
+                <header>
+                 <h1 class="title">
+                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Read full article: &quot;{{ article.title|striptags }}&quot;">{{ article.title|striptags }}</a>
+                 </h1>
+                </header>
                 {% endif %}
                 <section class="post_content">
                     {{ article.summary }}
                 </section>
-                <a class="more" href="{{ SITEURL }}/{{ article.url }}">Read more&nbsp;&#8674;</a>
-                <div class="clear"></div>
-            </div>
+                <footer>
+                  <a class="more" href="{{ SITEURL }}/{{ article.url }}">Read more&nbsp;&#8674;</a>
+                  <div class="clear"></div>
+                </footer>
+            </article>
         </div>
