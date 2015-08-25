@@ -9,6 +9,7 @@ powered by [Bootstrap](http://getbootstrap.com) and
 
 #Optional
 - Tipuesearch plugin
+- Assets plugin (+webassets +cssmin python packages for CSS compression)
 
 #Configuration items
 
