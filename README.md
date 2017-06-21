@@ -1,17 +1,19 @@
-#Calepin theme for Pelican 3.5.0
+# Calepin theme for Pelican 3.5.0
 
 Calepin is a notebook-like theme for [Pelican](https://github.com/getpelican/pelican),
 powered by [Bootstrap](http://getbootstrap.com) and 
 [FontAwesome icons](http://fortawesome.github.io/Font-Awesome/).
 
-#Requirements
+# Requirements
+
 - [Pelican](https://github.com/getpelican/pelican)
 
-#Optional
+# Optional
+
 - Tipuesearch plugin
 - Assets plugin (+webassets +cssmin python packages for CSS compression)
 
-#Configuration items
+# Configuration items
 
 Customizable items in `pelicanconf.py`:
 
@@ -53,7 +55,7 @@ Customizable items in `pelicanconf.py`:
 
    `tipue_search` - If enabled, a searchbox is set at the top right.
 
-#Screenshot
+# Screenshots
 
 ![screenshot](screenshot.png)
 
@@ -61,7 +63,7 @@ Customizable items in `pelicanconf.py`:
 
 ![screenshot](screenshot_responsive.png)
 
-#Live example
+# Live example
 
-Check [my blog](http://fernandezcuesta.github.io) for a live demo.
+Check [my (deprecated) blog](http://fernandezcuesta.github.io) for a live demo.
 
